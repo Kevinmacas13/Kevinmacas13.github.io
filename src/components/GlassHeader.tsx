@@ -18,7 +18,7 @@ export default function GlassHeader() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          ✨ {personalInfo.name}
+          ✨ {"Macas K."}
         </motion.a>
 
         {/* Desktop Navigation */}
@@ -77,18 +77,24 @@ export default function GlassHeader() {
                     key={item}
                     href={`#${item}`}
                     className="transition-colors hover:text-foreground/80 text-foreground/60 py-2"
-                    onClick={toggleMenu}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.2, delay: index * 0.1 }}
-                  >
-                    {item === "experience" && "💼 "}
-                    {item === "skills" && "🛠️ "}
-                    {item === "projects" && "🚀 "}
-                    {item === "awards" && "🏆 "}
-                    {item === "education" && "🎓 "}
-                    {item.charAt(0).toUpperCase() + item.slice(1)}
-                  </motion.a>
+                    onClick={(e) => {
+                      e.preventDefault(); // Evita el comportamiento predeterminado
+                      setIsMenuOpen(false); // Cierra el menú
+                      setTimeout(() => {
+                        document.getElementById(item)?.scrollIntoView({ behavior: "smooth" });
+                      }, 300); // Pequeño delay para evitar conflictos en móviles
+                    }}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.2, delay: index * 0.1 }}
+                    >
+                  {item === "experience" && "💼 "}
+                  {item === "skills" && "🛠️ "}
+                  {item === "projects" && "🚀 "}
+                  {item === "awards" && "🏆 "}
+                  {item === "education" && "🎓 "}
+                  {item.charAt(0).toUpperCase() + item.slice(1)}
+                </motion.a>
                 )
               )}
             </nav>

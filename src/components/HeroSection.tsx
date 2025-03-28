@@ -52,7 +52,6 @@ export default function HeroSection() {
             >
               Telecommunication Engineer 👨‍💻
             </motion.p>
-
             <motion.div
               className="flex flex-col gap-2 items-center md:items-start"
               variants={containerVariants}
@@ -72,7 +71,7 @@ export default function HeroSection() {
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <Mail className="h-4 w-4 mr-2" />
+              <Mail className="h-4 w-4 mr-2" />
                 ✉️ {personalInfo.email}
               </motion.a>
 

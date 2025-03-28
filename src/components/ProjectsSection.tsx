@@ -26,7 +26,9 @@ export default function ProjectsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <MotionWrapper key={project.title} delay={index * 0.2}>
-              <GlassCard className="group overflow-hidden dark:border-green-500/10 h-full flex flex-col">
+              <GlassCard 
+              id={`project-${project.title.replace(/\s+/g, "-").toLowerCase()}`} 
+              className="group overflow-hidden dark:border-green-500/10 h-full flex flex-col">
                 <CardHeader className="bg-gradient-to-r from-green-500/5 to-blue-500/5">
                   <CardTitle className="text-center md:text-left group-hover:text-green-500 transition-colors duration-300">
                     {project.title}
@@ -35,8 +37,8 @@ export default function ProjectsSection() {
                 <CardImage
                   src={project.image}
                   alt={`${project.title} preview`}
-                  aspectRatio="video"
-                  className="group-hover:scale-105 transition-transform duration-300"
+                  aspectRatio="wide"
+                  className="group-hover:scale-105 transition-transform duration-300 pb-4"
                   overlay
                 />
                 <CardContent className="flex-grow">
