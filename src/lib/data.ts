@@ -88,7 +88,7 @@ export const projects = [
       "Data-Driven Insights: Analyzed user patterns for adaptive energy and food management.",
       "Reward Integration: Built QR-based green points system to incentivize eco-friendly actions.",
     ],
-    image: "/public/project1.webp",
+    image: "/project1.webp",
     skills: ["Flutter","JavaScript", "CSS", "Mysql", "HTML","C++"],
   },
   {
@@ -99,7 +99,7 @@ export const projects = [
       "Create a database for ",
       "Preselected messages for be sending ",
     ],
-    image: "/public/project2.webp",
+    image: "/project2.webp",
     skills: ["Flutter", "Python"], 
   },
 ];
