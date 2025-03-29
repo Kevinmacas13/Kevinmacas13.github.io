@@ -44,7 +44,7 @@ export default function ExperienceSection() {
               >
                 <div className="flex items-center mb-3">
                   <div className="h-6 w-6 flex items-center justify-center rounded-full bg-purple-500/10 mr-2">
-                    <Briefcase className="h-4 w-4 text-purple-500" />
+                    <Briefcase className="h-4 w-4 text-green-500" />
                   </div>
                   <h4 className="text-sm font-medium">Key Achievements</h4>
                 </div>

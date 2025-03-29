@@ -40,8 +40,8 @@ export default function EducationSection() {
                   viewport={{ once: true }}
                 >
                   <div className="flex items-center mb-3">
-                    <div className="h-6 w-6 flex items-center justify-center rounded-full bg-purple-500/10 mr-2">
-                      <Award className="h-4 w-4 text-purple-500" />
+                    <div className="h-6 w-6 flex items-center justify-center rounded-full bg-green-500/10 mr-2">
+                      <Award className="h-4 w-4 text-gree-500" />
                     </div>
                     <h4 className="text-sm font-medium">
                       ✨ Achievements & Activities

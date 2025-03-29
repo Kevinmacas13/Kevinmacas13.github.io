@@ -42,7 +42,7 @@ export default function TimelineItem({
         />
         {!isLast && (
           <motion.div
-            className="w-px grow bg-gradient-to-b from-purple-500/50 to-pink-500/30 dark:from-purple-500/30 dark:to-pink-500/10"
+            className="w-px grow bg-gradient-to-b from-blue-500/50 to-green-500/30 dark:from-purple-500/30 dark:to-pink-500/10"
             initial={{ height: 0 }}
             whileInView={{ height: "100%" }}
             transition={{ duration: 0.8, delay: index * 0.2 + 0.3 }}

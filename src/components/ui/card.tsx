@@ -87,7 +87,7 @@ const CardImage = React.forwardRef<HTMLImageElement, CardImageProps>(
     const aspectRatioClasses = {
       square: "aspect-square",
       video: "aspect-video",
-      wide: "aspect-[21/9]",
+      wide: "aspect-[19/15]",
     };
 
     return (

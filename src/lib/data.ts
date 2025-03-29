@@ -13,7 +13,8 @@ export const workExperience = [
     position: "TI Enginner",
     period: "Mar 2024 - September 2024",
     achievements: [
-      "Designed and implemented business logic for AWS Lambdas using the Serverless Framework, forming the backbone of the application's functionality and ensuring seamless backend operations.",
+      "Implementation of IT infrastructure activities, including Data Center support, inventory management, technological equipment configuration, and technical support for offices and medical staff.",
+      "Participation in projects focused on developing Flutter applications with a C# .NET backend.",
       
     ],
   },
@@ -65,14 +66,11 @@ export const skills = {
   ],
 
   SoftwareDevelopment:[
-
     "Reactjs",
     "Tailwind CSS",
     "HTML",
     "CSS",
     "Flutter",
-
-
   ]
   
 };
@@ -96,11 +94,31 @@ export const projects = [
     github: "https://github.com/Kevinmacas13/Envio.git",
     description: [
       "Aplictaion to send automatic message to  user of gmail or Telegram",
-      "Create a database for ",
+      "Create a database for clients",
       "Preselected messages for be sending ",
     ],
     image: "/project2.webp",
     skills: ["Flutter", "Python"], 
+  },
+
+  {
+    title: "Hack the box",
+    github: "https://github.com/Kevinmacas13/Kalilinux.git",
+    description: [
+      "Pentesting of web",
+    ],
+    image: "/project3.webp",
+    skills: ["Nmap", "BurpSuite", "Sql Map"], 
+  },
+
+  {
+    title: "Issabel Project",
+    github: "https://github.com/Kevinmacas13/Kalilinux.git",
+    description: [
+      "Configure a server of voice IP",
+    ],
+    image: "/project4.webp",
+    skills: ["Networking protocols", "Voip"], 
   },
 ];
 
@@ -112,5 +130,23 @@ export const awards = [
   //   type: "International",
   //   position: "Second Place",
   // },
+ 
+];
+
+
+export const services = [
+
+  {
+    name:"Academic Tutorys",
+    description:"Reinforcement tutoring in physics and mathematics at the pre-university level",
+    modality:"Virtual or Presencial",
+
+  },
+  {
+   name:"App development",
+   description:"Developing mobile aplication application with flutter or React",
+   modality:"Presencial",
+
+  }
  
 ];

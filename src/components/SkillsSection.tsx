@@ -25,10 +25,8 @@ import { GlassCard } from "./ui/glass-card";
 
 
 function SkillTag({ skill, index }: { skill: string; index: number }) {
-  // Creamos un mapeo dinámico entre habilidades y proyectos
+  
   const skillToProjectMap: { [key: string]: string[] } = {};
-
-  // Llenamos el mapa de habilidades y proyectos de manera dinámica
   projects.forEach((project) => {
     project.skills.forEach((projectSkill) => {
       if (!skillToProjectMap[projectSkill]) {
